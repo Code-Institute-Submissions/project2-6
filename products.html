@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">        <!-- makes sure site renders as expected and efficiently-->
+        <title>Farmhouse Goodies</title>  <!-- the order for stylesheets ...bootstrap, google fonts, then our css style sheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />   <!--2.3.1 from cdnjs.com -->
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i" rel="stylesheet">   <!-- google fonts -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        
+    
+</head>
+
+<body>
+                <!-- ----nav ----->
+    <nav class="navbar navbar-default ">            <!-- bootstrap navbar class name and navbar default to give standard styling -->
+                                             <!-- navbar-fixed-top holds the navbar in position when scrolling page but takes 2 much space-->
+        <div class="container-fluid">               <!-- stretch the navbar to 100% page width-->
+                  <!-- logo -->
+            <div class="navbar-header">
+                <a class="navbar-brand">       <!-- text based brand named link header -->
+                  <h2>Farmhouse Goodies</h2>
+                </a>
+                <!--dropdown burger -->                                 
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                                                
+            </div>
+                  <!-- navbar -->
+            <div class="navbar-collapse collapse" id="navbar">     <!--dropdown burger -->     
+                <ul class="nav navbar-nav">                             <!-- menu with 2 `navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="hidden-sm hidden-md">About</a></li>
+                    <li class="visible-xs"><a href="/login" class="btn btn-default navbar-btn" data-toggle='modal' data-target='#LogInModal'>Log In</a></li>
+                </ul>
+              
+                          <!-- message -->
+                <div class="navbar-header navbar-right hidden-xs">      <!-- moves this section to right of navbar. hidden-xs hides btn+txt for mobile-->
+                    <a href="/login" class="btn btn-default navbar-btn" data-toggle='modal' data-target='#LogInModal'>Log In</a>
+                    <p class="navbar-text"><i></i>Organic produce for your palate</p>   <!-- marketing text -->
+                </div>
+            </div>    
+        </div>
+    </nav>
+    
+    
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
+        <!-- Callout -->
+        <div class="row">                       <!-- breaking page into sections-->
+            <div class="col-xs-12">                 <!-- xs-12 single column for mobile devices -->
+                <section class="callout jumbotron text-center products-jumbotron" id="products-jumbotron">     <!-- jumbotron highlights the callout -->
+                    <h1>Our Products</h1>
+                    <p>
+                      <ul class="list-group">
+                          <li class="list-group-item">Cheeses</li>
+                          <li class="list-group-item">Meats-- Fresh and Smoked</li>
+                          <li class="list-group-item">Milk- Pasteurised and Unpasteurised</li>
+                          <li class="list-group-item">Honey- Comb and Jars</li>
+                          <li class="list-group-item">Fresh Vegetables</li>
+                      </ul>
+                        
+                        
+                    </p>
+                    <hr class="block-divider block-divider--black">         <!--  looks a bit shit..possibly get rid -->
+                    <p class="lead">Voted Best Irish Organic Food Producer 2017</p>
+                    <p><button class="btn btn-lg btn--cta btn--blue" data-toggle='modal' data-target='#joinUsModal'>Join Us</button></p>
+                    <!-- data-toggle='modal' (button is trigger for modal)-->
+                    <!-- data-target='#joinUsModal (which modal is involved-->
+                    <p class="text-muted"> <small>Certified by Bia an Bord na hEireann</small></p>  <!--small and faded text -->
+                </section>
+            </div>
+        </div>
+        <!-- /.callout -->
+    </div>
+        
+    
+    <div class="container-fluid quotes-container">
+        <!-- Quotes -->
+        <section class="quotes">
+            <div class="row">                                            <!-- row around quotes header -->
+                <div class="col-xs-12">                 <!-- xs-12 single column for mobile devices -->
+                    <div class="page-header">
+                        <h2 class="text-uppercase">Quotes:</h2>
+                    </div>
+                </div>
+            </div>                                                       <!-- row around quotes header-->
+            <div class="row">                                                        <!-- row around quotes-->
+                <div class="col-xs-12 col-md-6">                 <!-- xs-12 single column for mobile devices md-6 for medium devices-->
+                    <div class="media quotes-row">
+                        <div class="media-left">        <!-- can put hidden-xs in here to hide images on mobile -->
+                            <img src="assets/images/lady-1.jpg" class="img-thumbnail media-object"  height=100 width=100> <!--thumb rather than circle-->
+                        </div>
+                        <div class="media-body">            <!-- contains the quote -->
+                            <blockquote class="quote">
+                                <p>WOW....What Can I Say??? FABULOUS!!!!!</p>
+                                <p>- Jane Jones on <cite title="Twitter">Twitter</cite></p>
+                            </blockquote> 
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-xs-12 col-md-6">                 <!-- xs-12 single column for mobile devices md-6 for medium devices -->
+                <div class="media">
+                        <div class="media-left">        <!-- can put hidden-xs in here to hidse images on mobile -->
+                            <img src="assets/images/lady-2.jpg" class="img-thumbnail media-object" height=100 width=100> <!--thumb rather than circle-->
+                        </div>
+                        <div class="media-body">            <!-- contains the quote -->
+                            <blockquote class="quote">
+                                <p>YUM YUM YUM...You can't beat the food quality from this place</p>
+                                <p>- Rebecca Dolly on <cite title="Facebook">Facebook</cite></p>
+                            </blockquote> 
+                        </div>
+                    </div>
+                </div>
+            </div>                                                                  <!-- row around quotes -->
+        </section>
+        <!-- /.quotes -->
+    </div>     
+    
+    <!-- Features -->
+
+    <div class="container features-container">              <!-- div.container.features-container -->
+        <section class="features">
+            <div class="row">                                                   <!-- row around features header-->
+                <div class="col-xs-12">                 <!-- xs-12 single column for mobile devices -->
+                    <div class="page-header">           
+                        <h2 class="text-uppercase">Features:</h2>
+                    </div>
+                </div>
+            </div>                                                              <!-- row around features header-->
+            <div class="row">                                                   <!-- row àround features -->
+                <div class="col-xs-12 col-md-4 col-lg-4">                 <!-- xs-12 single column for mobile devices -->
+                    <div class="feature">
+                        <h3>About us</h3>      <!--span class="glyphicon glyphicon=-gift hidden-xs"></span>(example of glyphicon for <h3>)-->
+                        <p>We are a family run business that started out in 2003. We are located just outside the town of Athboy in the heart of County Meath. The farm is run by the son of the house Jeremy and his wife Denise. The shop is run by our lovely daughter Helga and her husband Olef. My wife Jean and I (Dominic) run the online side of the business and deal directly with You, our online customers. </p>
+                        <p><a class="btn btn-sm btn-default" href="">Continue Reading</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">                 <!-- xs-12 single column for mobile devices -->
+                    <div class="feature">
+                        <h3>Our Commitment to You</h3>
+                        <p>We are commited to supplying you, our cherished customer, with the best quality products 
+                        available on the market. We are commited to the production of high end organic foods and to
+                        our own wellbeing and that of our customers. </p>
+                        <p><a class="btn btn-sm btn-default" href="">Continue Reading</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">                 <!-- xs-12 single column for mobile devices -->
+                    <div class="feature">
+                        <h3>Our Plans</h3>
+                        <p>We have built up a huge customer base since we started trading in 2003 and plan to expand our product 
+                        range over the next 2 years. This will include smoked meats for the domestic and international markets
+                        as well as the production of various different new cheeses</p>
+                        <p><a class="btn btn-sm btn-default" href="">Continue Reading</a></p
+                    </div>
+                </div>
+            </div>                                                              <!-- row around features -->
+        </section>
+    </div>
+     <!-- features -->
+    
+    <!--   join Us Modal  -->
+    
+            <!-- Modal ..within body tag but outside other elements -->
+            <!-- Modal dialogue captures entire screen so needs to be top level element -->
+    <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <!-- joinUsModal...unique ID for linking to join us button line48-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">             <!-- island of content in middle of page-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Join Us Today</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="address" class="form-control" id="address" placeholder="Address">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">***We won't pass your details to 3rd parties***</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Create Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Create Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to terms and conditions
+                            </label>
+                        </div>
+                        
+                        
+                        
+                        <button type="submit" class="btn btn-success">Join Us</button>
+                                                            <!-- success is color -->
+                    </form>
+                    
+                    
+                </div>                          <!--has header, content and footer linke any other page(by default)-->
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----login modaL----line 36  (discussed in bootstrap ur next big idea-components) -->
+    <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <!-- LogInModal...unique ID for linking to join us button line48-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">             <!-- island of content in middle of page-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to terms and conditions
+                            </label>
+                        </div>
+                        
+                        
+                        
+                        <button type="submit" class="btn btn-success">Log In</button>
+                                                            <!-- success is color -->
+                    </form>
+                    
+                    
+                </div>                          <!--has header, content and footer linke any other page(by default)-->
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--js library at the bottom so it loads after all the html...and css rules have loaded first-->
+    <!-- possible problem with jquery...wouldnt load until i changed to https: also he uses version 3.2.1.min.js-->
+    <!-- is important that code.jquery.com minimised link is above bootstrap link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <!-- bootstrapcdn below is found on getting started page of bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">        <!-- makes sure site renders as expected and efficiently-->
+        <title>Farmhouse Goodies</title>  <!-- the order for stylesheets ...bootstrap, google fonts, then our css style sheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />   <!--2.3.1 from cdnjs.com -->
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i" rel="stylesheet">   <!-- google fonts -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        
+        <!-- emailjs script-->
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){                                        
+                emailjs.init("user_YBmRaYq6IFscJDE7nzreY");
+                //emailjs.send("gmail", "farmhouse_goodies",{name: "Tom", notes:"check this out!"});
+                //emailjs.send("serviceID", "templateID",{name: "Tom", notes:"check this out!"}); this is to test the service
+            })();
+        </script>
+    
+</head>
+
+<body>
+                <!-- ----nav ----->
+    <nav class="navbar navbar-default ">            <!-- bootstrap navbar class name and navbar default to give standard styling -->
+                                             <!-- navbar-fixed-top holds the navbar in position when scrolling page but takes 2 much space-->
+        <div class="container-fluid">               <!-- stretch the navbar to 100% page width-->
+                  <!-- logo -->
+            <div class="navbar-header">
+                <a class="navbar-brand">       <!-- text based brand named link header -->
+                  <h2>Farmhouse Goodies</h2>
+                </a>
+                <!--dropdown burger -->                                 
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                                                
+            </div>
+                  <!-- navbar -->
+            <div class="navbar-collapse collapse" id="navbar">     <!--dropdown burger -->     
+                <ul class="nav navbar-nav">                             <!-- menu with 2 `navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="hidden-sm hidden-md">About</a></li>
+                    <li class="visible-xs"><a href="/login" class="btn btn-default navbar-btn" data-toggle='modal' data-target='#LogInModal'>Log In</a></li>
+                </ul>
+              
+                          <!-- message -->
+                <div class="navbar-header navbar-right hidden-xs">      <!-- moves this section to right of navbar. hidden-xs hides btn+txt for mobile-->
+                    <a href="/login" class="btn btn-default navbar-btn" data-toggle='modal' data-target='#LogInModal'>Log In</a>
+                    <p class="navbar-text"><i></i>Organic produce for your palate</p>   <!-- marketing text -->
+                </div>
+            </div>    
+        </div>
+    </nav>
+    
+    
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
+        <!-- Callout -->
+        <div class="row">                       <!-- breaking page into sections-->
+            <div class="col-xs-12">                 <!-- xs-12 single column for mobile devices -->
+                <section class="callout jumbotron text-center" id="about-jumbotron">     <!-- jumbotron highlights the callout -->
+                    <h1>About Us</h1>
+                    <p>We are a family run business that started out in 2003. We are located just outside the town of Athboy 
+                    in the heart of County Meath. The farm is run by the son of the house Jeremy and his wife Denise. 
+                    The shop is run by our lovely daughter Helga and her husband Olef. 
+                    My wife Jean and I (Dominic) run the online side of the business and deal directly with You, our online customers.</p>
+                    <hr class="block-divider block-divider--black">         <!--  looks a bit shit..possibly get rid -->
+                    <p class="lead">Voted Best Irish Organic Food Producer 2017</p>
+                    <p><button class="btn btn-lg btn--cta btn--blue" data-toggle='modal' data-target='#joinUsModal'>Join Us</button></p>
+                    <!-- data-toggle='modal' (button is trigger for modal)-->
+                    <!-- data-target='#joinUsModal (which modal is involved-->
+                    <p class="text-muted"> <small>Certified by Bia an Bord na hEireann</small></p>  <!--small and faded text -->
+                </section>
+            </div>
+        </div>
+        <!-- /.callout -->
+    </div>
+        
+    
+    
+        <!-- Quotes -->
+<section class="container-fluid">
+        <div class="row row-table">
+            <div class="col-xs-12 col-sm-12 col-md-6 bg-color-conferences section-column">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Farmhouse Affiliates</h3>
+                    </div>
+                </div>
+                <div id="map"></div>
+                <div id="info_div"></div>  
+            </div>
+            
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 col-sm-12 bg-color-conferences section-column">
+            <div class="well well-sm">
+                <form onsubmit="return sendMail(this);" class="form-horizontal">
+                    
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="fullname" name="name" type="text" placeholder="Full Name" class="form-control">
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="emailaddress" name="emailaddress" type="text" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>          <!-- changed input #email to eemail -->
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="phone" name="phone" type="text" placeholder="Phone Number" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <textarea rows="5" name="customercarequery" class="form-control" id="customercarequery" placeholder="Customer Care Query" required></textarea>                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">send </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+    </div>    
+        
+    <footer>
+        <div class="col-md-4 col-md-offset-8">
+          <p>Posted by: TOM1MOL</p>
+          <p>Contact information: <a href="mailto:TOM1MOL@TOM1MOL.com">
+              TOM1MOL@TOM1MOL.com</a>.</p>
+        </div>
+    </footer>    
+    
+    <!-- Features -->
+
+    
+     <!-- features -->
+    
+   <!-- removed join us modal -->
+    
+    <!-- ----login modaL----line 36  (discussed in bootstrap ur next big idea-components) -->
+    <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <!-- LogInModal...unique ID for linking to join us button line48-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">             <!-- island of content in middle of page-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to terms and conditions
+                            </label>
+                        </div>
+                        
+                        
+                        
+                        <button type="submit" class="btn btn-success">Log In</button>
+                                                            <!-- success is color -->
+                    </form>
+                    
+                    
+                </div>                          <!--has header, content and footer linke any other page(by default)-->
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--js library at the bottom so it loads after all the html...and css rules have loaded first-->
+    <!-- possible problem with jquery...wouldnt load until i changed to https: also he uses version 3.2.1.min.js-->
+    <!-- is important that code.jquery.com minimised link is above bootstrap link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <!-- bootstrapcdn below is found on getting started page of bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
+    </script>
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+        <!-- maps script -->
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
+</body>
+
+</html>

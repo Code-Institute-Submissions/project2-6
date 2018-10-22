@@ -1,0 +1,432 @@
+body {
+    font-family: 'Crimson Text', sans serif;
+}
+
+/* containers */
+
+.callout-container {
+    height: 100vh;
+    /* vertical height...entire height of browser window */
+    /*    https://css-tricks.com/perfect-full-page-background-image/       */
+    background: url(../assets/images/Hinton_Farmhouse.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    /* problem here causes jumbotron not to c0ver full width of page on desktop */
+    align-items: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    /* covers the page ..deadens the brightness..possibly get rid of it */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* colors */
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+/*   quotes */
+
+
+.quotes-container {
+    background-color: green;
+}
+
+.quotes-row {
+    background-color: green;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 0px;
+    font-size: 17.5px;
+    border-left: 0px;     /* got rid of line down side */
+}
+
+
+
+
+.features-container {}
+
+
+/*     navbar  */
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    /* tried transparent */
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.navbar-header {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    /* copied in from inspect element > About and Home */
+    color: blue;
+    font-weight: bold;
+    background-color: transparent;                    /* makes bg-color for login transparent */
+    margin-right: 100%;        /* pushed login on mobile to far left... also stopped whole width of screen being clickable */
+    border: 0;                /* got rid of border */
+    font-size: 21px;
+}
+
+
+.navbar-default .navbar-text {        /* copied in from inspect element>> organic produce for ur palate*/
+    color: greenyellow;
+    font-weight: bold;
+    
+}
+
+.navbar-btn {
+    background-color: blue;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #32d416;
+    background-color: transparent;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: blue;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: green;
+    transition: ease-in-out;
+}
+
+.container-fluid>.navbar-collapse, 
+.container-fluid>.navbar-header, 
+.container>.navbar-collapse, 
+.container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    border: 0;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: greenyellow;
+    background-color: transparent;
+}
+
+.h2, h2 {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.btn-default:hover {                    /* login button  */
+    background-color: #32d416;
+}
+.navbar-btn {
+    margin-left: 0;
+    background-color: green;
+}
+
+
+
+
+
+/*  Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+}
+
+.jumbotron small {
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;            /* about me jumbotron paragraph */
+    font-size: 21px;
+    font-weight: 200;
+    color: white;
+}
+/*
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+    padding-top: 158px;
+}
+*/
+
+#index-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 17px;
+    padding-bottom: 0px;
+}
+
+#about-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 166px;
+    padding-bottom: 0px;
+}
+
+#products-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 156px;
+    padding-bottom: 40px;
+    
+}
+
+
+.list-group-item {
+    background-color: transparent;            /* makes product jumbotron transparent */
+    color: white;
+    border: 0;
+    font-size: 23px;
+}
+
+
+
+
+
+/* block dividers  */
+
+.block-divider {
+    /* looks a bit shit...line 51 in html */
+    width: 61px;
+    height: 3px;
+    border: 0;
+}
+
+.block-divider--black {
+    background-color: black;
+}
+
+.block-divider--short {
+    width: 61px;
+}
+
+
+
+
+
+
+/* buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--blue {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+.btn--blue:hover,
+/* pseudo elements...hover states */
+
+.btn--blue:active,
+.btn--blue:focus,
+.btn--blue:active:focus {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+/* maps */
+div#map {
+    min-height: 360px;
+}
+
+
+
+/*    Media  */
+
+
+@media (min-width: 768px) {
+.navbar-nav>li>a  {
+    padding-top: 24px;
+    padding-bottom: 15px;                /* moves home and about down..and across to the right */
+    padding-left: 39px;
+}
+}
+
+@media (min-width: 768px) {                /* move jumbotron more central in desktop mode */
+.callout-container {
+    padding-left: 15%;
+    
+}
+}
+
+/*
+@media (min-width: 768px) { 
+.navbar-default .navbar-text {
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 15px;
+    
+}
+}
+
+*/
+
+@media (min-width: 992px) { 
+.navbar-default .navbar-text {
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 15px;
+    
+}
+}
+
+@media (min-width: 768px) {
+.navbar-btn {
+    background-color: blue;
+    color: white;
+    margin-right: 24px;
+}
+}
+
+@media (min-width: 768px)  {
+.navbar-default .navbar-nav>li>a {
+    color: blue;
+    font-weight: bold;
+    background-color: transparent;
+    margin-right: 100%;
+    border: 0;
+    font-size: 17px;
+}
+}
+/*
+@media (min-width: 992px)  {
+.navbar-default .navbar-nav>li>a {
+    color: blue;
+    font-weight: bold;
+    background-color: transparent;
+    margin-right: 100%;
+    border: 0;
+    font-size: 17px;
+}
+}
+*/
+@media (min-width: 992px) {
+.navbar-default .navbar-nav>li>a {
+    color: blue;
+    font-weight: bold;
+    background-color: transparent;
+    margin-right: 74%;
+    border: 0;
+    font-size: 26px;
+    margin-top: -4px;
+    margin-left: 44px;
+}
+}
+
+/*
+@media screen and (min-width: 768px) {
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 105px;
+    padding-left: 54px;
+    padding-top: 0px;
+}
+}
+*/
+
+@media (min-width: 992px) {
+#about-jumbotron {
+    padding-right: 313px;
+    padding-left: 90px;
+    padding-top: 166px;
+}
+}
+
+@media (min-width: 600px) {
+#products-jumbotron {
+    padding-right: 115px;
+    padding-left: 20px;
+    padding-top: 166px;
+    padding-bottom: 144px;
+}
+}
+
+
+@media (min-width: 992px) {
+#products-jumbotron {
+    padding-right: 115px;
+    padding-left: 300px;
+    padding-top: 166px;
+}
+}
+
+@media (min-width: 668px) {
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 0px;
+    font-size: 23.5px;
+    border-left: 0px;     /* got rid of line down side */
+}
+}    
+
+
+@media (min-width: 768px) {
+.jumbotron h1 {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 209px;
+}
+}
