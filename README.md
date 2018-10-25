@@ -90,8 +90,15 @@
 
    
    Credits:
-   This site was my own idea. All text is my own. The picutres were obtained on google.
    
+   content:
+   This site was my own idea. All text is my own. 
+   
+   pictures:
+   The background picture and other associated pictures were obtained on google.
+   
+   acknowledgements:
+   I recieved pointers and guidance from my mentor.  
    
    
    
