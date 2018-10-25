@@ -31,7 +31,7 @@
    The maps function provides a store locator that enables the clients to find the nearest farm shop to them. It also gives them 
    details of the opening times for each particular shop. 
    
-   The bulk of the code for the map facility is in the maps.js file in the js folder(assets/js/mas.js).
+   The bulk of the code for the map facility is in the maps.js file in the js folder(assets/js/maps.js).
    It deals with the location of the map window(ie country/area displayed in the maps portal) by way of lattitude
    and longitude as well as the zoom level of the maps portal.
    It also creates markers and sets each of their positions with regard to each store location. This provides the user with the
@@ -91,13 +91,13 @@
    
    Credits:
    
-   content:
+   Content:
    This site was my own idea. All text is my own. 
    
-   pictures:
+   Pictures:
    The background picture and other associated pictures were obtained on google.
    
-   acknowledgements:
+   Acknowledgements:
    I recieved pointers and guidance from my mentor.  
    
    
