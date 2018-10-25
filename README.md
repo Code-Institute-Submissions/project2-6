@@ -55,7 +55,44 @@
    Testing:
    
    I ran into some problems while building this site. Positioning the map and contact section took an amount of 
-   adjustment before I was happy with the layout
+   adjustment before I was happy with the layout. I also had to make adjustments with regard to how the site functions
+   over various devices and using different browsers. 
+   
+   The contact form:
+   The contact form works great. It allows for all required data to be entered and transmitted to the site owners email address
+   via a third party platform.
+   
+   The input fields(name,email address and text box) all display error messages if they are blank when the 
+   user attempts to submit them. The email address input field must also somewhat resemble a genuine email address
+   as it must contain an @ symbol. Otherwise it is invalid and displays an error message.
+   
+   The map function:
+   The map function took some adjustments to get it to function correctly. The longitude, lattitude and zoom needed to be
+   tweaked in order to get the map to display as required. I also had to adjust the HTML to get it to display correctly on 
+   various sizes of screen/devices.
+   
+   I added markers to the map. This was done to display the locations of other farmshops around the country. 
+   When clicked upon the locations and opening hours are displayed in a textbox below the map. 
+   
+   
+   Deployment:
+   I have hosted my project on my github page.  Link: https://github.com/tom1mol/project2
+   I used the command line in cloud9 to push my project to github. 
+   
+   The process involved in hosting the project on github is as follows:
+   - Set up new repository on github
+   - create empty Git repository (git init)
+   - Add files to repository (git add .)
+   - Saved changes to local repository (git commit -m"")
+   - linked the local repository to git (git remote add origin "insert git url here")
+   - I pushed the contents of the local repository to git (git push -u origin master)
+  
+
+   
+   Credits:
+   This site was my own idea. All text is my own. The picutres were obtained on google.
+   
+   
    
    
    
