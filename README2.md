@@ -62,7 +62,13 @@ The map function: The map function took some adjustments to get it to function c
 
 I added markers to the map. This was done to display the locations of other farmshops around the country. When clicked upon the locations and opening hours are displayed in a textbox below the map.
 
-Deployment: I have hosted my project on my github page. Link:  [https://github.com/tom1mol/project2](https://github.com/tom1mol/project2)  I used the command line in cloud9 to push my project to github.
+**
+
+## Deployment:
+
+**
+
+I have hosted my project on my github page. Link:  [https://github.com/tom1mol/project2](https://github.com/tom1mol/project2)  I used the command line in cloud9 to push my project to github.
 
 The process involved in hosting the project on github is as follows:
 
