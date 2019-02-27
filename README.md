@@ -1,39 +1,35 @@
-**
+
 
 ## FARM SHOP
 
-**
 
+## Deployed Project Link:
 
-
-**
+https://project-2-tom1mol.c9users.io/index.html.
 
 ## Objective of the site:
 
-**
+
 
 The objective of this project was to create a mockup website. I originally created this website for my first project but have now incorporated it into my second project.
 
-I chose to create a website for a fictitious farm shop.
+I chose to create a website for a fictitious farm shop. 
 
-**
+
 
 ## About THE SITE:
 
-**
-
-**
 
 ## UX:
 
-**
+
 The site contains a description of the farm shop and its owners, the products that they sell and a pair of join me and login modals. As yet, these modals are not operational and are purely aesthetic.
 
 For the second project I am adding a fully functional contact us section as well as a maps function that will contain a store locator.
 
 For the maps section it was necessary to set up a google account and get an API key to allow me to use google maps.
 
-## **FEATURES:**
+## FEATURES:
 
 The contact us facility allows the site owner to be contacted through a 3rd party(emailjs.com) by potential clients. It supplies a portal for the client to register a query via a message while also leaving their contact details(name, phone number and email address).
 
@@ -43,19 +39,18 @@ The bulk of the code for the map facility is in the maps.js file in the js folde
 
 The code for the layout of the contact me function is in both the about.html and sendEmail.js files. The about.html file covers the layout and number of text boxes involved while the sendEmail.js file covers the level of functionality.
 
-**
+
 
 ## Technologies Used:
 
-**
 
 This site was created using HTML, CSS and JavaScript code. Various libraries were used including jQuery, which is a JavaScript library that is small and feature-rich, and more impotantly QUICK...which reduces/eliminates latency or lagging while browsing the site. Another prominent tool used in this project was Bootstrap. This is a front-end framework for designing websites and contains HTML and CSS templates that provide a quick method for producing interface components like forms and buttons. I also made use of google fonts.
 
-**
+
 
 ## Testing:
 
-**
+
 
 I ran into some problems while building this site. Positioning the map and contact section took an amount of adjustment before I was happy with the layout. I also had to make adjustments with regard to how the site functions ovn various devices and when using different browsers.
 
@@ -67,11 +62,11 @@ The map function: The map function took some adjustments to get it to function c
 
 I added markers to the map. This was done to display the locations of other farmshops around the country. When clicked upon, the locations and opening hours are displayed in a textbox below the map.
 
-**
+
 
 ## Deployment:
 
-**
+
 
 I have hosted my project on my github page. Link:  [https://github.com/tom1mol/project2](https://github.com/tom1mol/project2)  I used the command line in cloud9 to push my project to github.
 
@@ -84,11 +79,11 @@ The process involved in hosting the project on github is as follows:
 -   link the local repository to git (git remote add origin "insert git url here")
 -   Push the contents of the local repository to git (git push -u origin master)
 
-**
+
 
 ## Credits:
 
-**
+
 
 Content: This site was my own idea. All text is my own.
 
