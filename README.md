@@ -5,7 +5,7 @@
 
 ## Deployed Project Link:
 
-https://project-2-tom1mol.c9users.io/index.html.
+https://tom1mol.github.io/project2/index.html
 
 ## Objective of the site:
 
