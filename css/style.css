@@ -8,7 +8,8 @@ body {
     height: 100vh;
     /* vertical height...entire height of browser window */
     /*    https://css-tricks.com/perfect-full-page-background-image/       */
-    background: url(../assets/images/Hinton_Farmhouse.jpg) no-repeat center center fixed;
+    background: url(../assets/images/farmhouse_pic.jpg) no-repeat center center fixed;
+   /* background: url(../assets/images/Hinton_Farmhouse.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,7 +29,9 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(21, 4, 5, 0.3);
+
+    /*background-color: rgba(0, 0, 0, 0.3); */
 }
 
 /* colors */
@@ -69,7 +72,7 @@ blockquote {
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: transparent;
+    background-color: white;
     /* tried transparent */
     border: 0;
 }
@@ -149,6 +152,7 @@ blockquote {
 .h2, h2 {
     font-size: 28px;
     margin-top: -6px;
+    color: blue;
 }
 
 .btn-default:hover {                    /* login button  */
@@ -167,6 +171,7 @@ blockquote {
     margin-right: auto;
     margin-left: auto;
     background-color: green;
+    
 }
 
 .features-container {
@@ -174,12 +179,18 @@ blockquote {
     font-size: 14px;
     line-height: 1.42857143;
     color: #6b2a2a;
+    
 }
 
 
 /* Features */
 
+/* footer */
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 /*  Jumbotron */
 
@@ -231,8 +242,8 @@ blockquote {
 #about-jumbotron {
     padding-right: 20px;
     padding-left: 16px;
-    padding-top: 166px;
-    padding-bottom: 0px;
+    padding-top: 386px;
+    padding-bottom: 157px;
 }
 
 #products-jumbotron {
@@ -307,7 +318,17 @@ div#map {
     min-height: 360px;
 }
 
-
+/* contact us */
+.well {
+    min-height: 20px;
+/*    padding: 19px; */
+    margin-bottom: 20px;
+    background-color: #1ab615;
+    border: 1px solid #e3e3e3;
+/*    border-radius: 4px; 
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05); */
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
 
 /*    Media  */
 
@@ -342,7 +363,7 @@ div#map {
 
 @media (min-width: 992px) { 
 .navbar-default .navbar-text {
-    color: greenyellow;
+    color: #2f4eff;
     font-weight: bold;
     font-size: 18px;
     padding-right: 15px;
@@ -359,7 +380,7 @@ div#map {
 }
 @media (max-width: 868px)  {
 .jumbotron h1 {
-    color: blue;
+    color: #e8034c;
     font-weight: bold;
     margin-bottom: -12px;
     margin-left: 0px;
@@ -437,7 +458,7 @@ div#map {
 #products-jumbotron {
     padding-right: 115px;
     padding-left: 300px;
-    padding-top: 166px;
+    padding-top: 22px;
 }
 }
 
@@ -450,6 +471,14 @@ blockquote {
 }
 }    
 
+@media (max-width: 360px) {
+#about-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 328px;
+    padding-bottom: 245px;
+}
+}
 
 @media (min-width: 768px) {
 .jumbotron h1 {
